@@ -32,18 +32,25 @@
     <header class="bg-[#FFFBF0] pt-8 pb-16">
         <div class="container-max">
             <!-- navbar part start here -->
+         
             <nav class="flex justify-between items-center">
                 <img src="icons/logo.png" alt="logo" class="w-72">
-                <ul class="flex  items-center gap-12">
+               <div class="sm:hidden lg:block">
+                <ul class="flex  items-center gap-12 ">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
+               </div>
+               <svg class="sm:block w-7  lg:hidden " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg> 
             </nav>
+      
             <!-- banner part start here -->
-            <div class="banner-wrapper flex items-center justify-between">
-                <div class="banner-content">
+            <div class="banner-wrapper  lg:flex items-center justify-between">
+                <div class="banner-content sm:mt-12 lg:mt-0">
                     <h1 class="bebas font-normal text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span>
                         <br> <span class="text-[#363958]">of Winter</span>
                     </h1>
@@ -68,7 +75,7 @@
         <!-- women jacket section start here -->
         <section class="mt-12 mb-10" id="women-jacket">
             <h2 class="bebas font-normal text-5xl text-[#363958] mb-5">W0Man Jacket</h2>
-            <div class="jacket-wrapper grid grid-cols-3 gap-8">
+            <div class="jacket-wrapper grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="jacket-item p-5 rounded-3xl bg-white drop-shadow-xl">
                     <div class="jacket p-10 bg-[#C4C4C4] rounded-3xl">
                         <img class="w-full" src="images/jacket-1.png" alt="jacket-1">
@@ -109,7 +116,7 @@
                             BUY NOW</button>
                     </div>
                 </div>
-                <div class="jacket-item p-5 rounded-3xl bg-white drop-shadow-xl">
+                <div class="jacket-item  p-5 rounded-3xl bg-white drop-shadow-xl">
                     <div class="jacket p-10 bg-[#C4C4C4] rounded-3xl">
                         <img class="w-full" src="images/jacket-3.png" alt="jacket-4">
                     </div>
@@ -133,9 +140,9 @@
         </section>
         <!-- mens jacket section start here -->
 
-        <section class="mt-12 mb-32" id="women-jacket">
+        <section class="mt-12 mb-32" id="man-jacket">
             <h2 class="bebas font-normal text-5xl text-[#363958] mb-5">MAN Jacket</h2>
-            <div class="jacket-wrapper grid grid-cols-3 gap-8">
+            <div class="jacket-wrapper grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="jacket-item p-5 rounded-3xl bg-white drop-shadow-xl">
                     <div class="jacket p-10 bg-[#C4C4C4] rounded-3xl">
                         <img class="w-full" src="images/jacket-4.png" alt="jacket-4">
@@ -199,7 +206,7 @@
             </div>
         </section>.
         <section class="mb-48" id="last-section">
-            <div class="flex justify-between gap-4 items-center">
+            <div class="flex sm:flex-col-reverse sm:gap-6 lg:flex-row justify-between lg:gap-4 items-center">
                 <div class="left-item">
                     <div class="left-item-wrapper">
                         <div class="gap-9 flex items-center left-item pt-6 pl-6 pr-16 pb-6 rounded-3xl drop-shadow-lg bg-white">
